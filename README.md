@@ -1,2 +1,26 @@
-# tracetime
-追踪时间清单，知道你的时间去哪儿了。帮助你管理时间，找出有哪些低质量的时间，从而提升时间质量。
+# Quasar App (chrome_trace_time)
+
+A Quasar Framework app
+
+## Install the dependencies
+```bash
+npm install
+```
+
+### Start the app in development mode (hot-code reloading, error reporting, etc.)
+```bash
+quasar dev
+```
+
+### Lint the files
+```bash
+npm run lint
+```
+
+### Build the app for production
+```bash
+quasar build
+```
+
+### Customize the configuration
+See [Configuring quasar.conf.js](https://v1.quasar.dev/quasar-cli/quasar-conf-js).
