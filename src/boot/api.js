@@ -6,7 +6,7 @@ let Token = localStorage['token'] || '' ;
 axios.defaults.timeout = 6000; //http默认超时时间是60秒
 axios.defaults.retry = 3; //在main.js设置全局的请求次数，请求的间隙
 axios.defaults.retryDelay = 1000;
-axios.defaults.baseURL = 'http://localhost:8401';
+axios.defaults.baseURL = 'http://book.todo8.cn/';
 // axios.defaults.baseURL = 'http://localhost:8401';
 axios.defaults.headers.common['token'] = Token;
 
