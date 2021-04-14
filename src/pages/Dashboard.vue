@@ -1,11 +1,11 @@
 <template>
   <q-page class=" q-pa-sm q-gutter-y-sm">
-    <div class="q-pa-sm rad8 row  bg-grey-6 " style="height:120px;">
+    <div class="q-pa-sm rad8 row  bg-grey-4 " style="height:120px;">
       <div class="rad8 col-6">当日时间汇总 popup 图</div>
       <div class="rad8 col-6">时间分片图</div>
     </div>
     <div  class="  row  ">
-      <div class="rad8 q-mr-sm bg-grey-6  col place">
+      <div class="rad8 q-mr-sm bg-grey-4  col place">
           <v-chart
             :option="bar"
             :init-options="initOptions"
@@ -14,7 +14,7 @@
             autoresize
           />
         </div>
-        <div class="rad8 bg-grey-6 col place">
+        <div class="rad8 bg-grey-4 col place">
           <v-chart
             :option="pie"
             :init-options="initOptions"
@@ -25,13 +25,13 @@
       
     </div>    
     <div  class=" row  ">
-      <div class="rad8 bg-grey-6 col-12" style="height:150px;">
+      <div class="rad8 bg-grey-4 col-12" style="height:150px;">
        碎片时间图-小时
       </div>
     </div>    
-    <div class=" rad8 bg-grey-5 " >
-      <div class="rad8 col-12"><canvas class="flagmentTimeMinu"></canvas></div>
-      <div  id="flagmentTimeDrag" class="q-pl-sm q-pr-sm row rad8 bg-grey-6 " style="height:20px;">
+    <div class=" rad8 bg-grey-4 " >
+      <div class="rad8 col-12 flagmentTimeCon"><canvas class="flagmentTimeMinu"></canvas></div>
+      <div  id="flagmentTimeDrag" class="q-pl-sm q-pr-sm row rad8 bg-grey-4 " style="height:20px;">
         <div class=" col-12" style="text-align: center;display:flex;display: -webkit-flex; ">
           <div v-bind:class="{ show1: hour%2==1,show2: hour%2!=1 }" style="flex:1;" v-for="hour in hours"  :key='hour'>{{hour}}</div>
         </div>
@@ -51,8 +51,8 @@
     </div>  
       
     <div  class="  row  " style="height:480px;">
-        <div class="rad8  q-mr-sm col-8 bg-grey-5">mactime程序列表-可能用表格</div>
-        <div class="rad8 col bg-grey-6">设置分类。列表元素点击左键，或邮件弹出菜单按钮，</div>
+        <div class="rad8  q-mr-sm col-8 bg-grey-4">mactime程序列表-可能用表格</div>
+        <div class="rad8 col bg-grey-4">设置分类。列表元素点击左键，或邮件弹出菜单按钮，</div>
     </div>
   </q-page>
 </template>
@@ -272,6 +272,7 @@ export default {
 </script>
 <style >
 #flagmentTimeDrag .q-slider__track-markers{ opacity: 0.3; }
+.flagmentTimeCon{padding: 2px 2px 0 2px;    border: 1px solid #e0e0e0;    margin-top: 2px;}
 .show2 {opacity: 0.6;}
 .show1 {opacity: 0.3;}
 #flagmentTimeDrag .q-slider{margin-top: -21px; }
