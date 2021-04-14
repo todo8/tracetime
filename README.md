@@ -1,6 +1,8 @@
 # Quasar App (chrome_trace_time)
 
+
 A Quasar Framework app
+[ ui框架中文文档 横幅 | Quasar Framework](http://www.quasarchs.com/vue-components/banner)
 
 ## Install the dependencies
 ```bash
