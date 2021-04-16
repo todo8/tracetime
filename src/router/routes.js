@@ -9,6 +9,10 @@ const routes = [
       { path: 'options', component: () => import('pages/Options.vue') },
       { path: 'about', component: () => import('pages/About.vue') },
       { path: 'focus', component: () => import('pages/Focus.vue') },
+      { path: 'download', component: () => import('pages/Download.vue') },
+      { path: 'videos', component: () => import('pages/Videos.vue') },
+      { path: 'feedback', component: () => import('pages/Feedback.vue') },
+      { path: 'influence', component: () => import('pages/Influence.vue') },      
     ]
   },
   { path: '/config',component: () => import('pages/Config.vue')},

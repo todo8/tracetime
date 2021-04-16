@@ -112,19 +112,22 @@ import random from "random-string";
 
 const linksData = [
   {text: '主页',icon: 'home',link: '/#/'},
-  {text: '时间报表',icon: 'score',link: '/#/dashboard'},
+  {text: '成长时间',icon: 'score',link: '/#/dashboard'}, // 时间报表
   {text: '分类设置',icon: 'settings',link: '/#/config'},
+  {text: '影响指数',icon: 'emoji_events',link: '/#/influence'  },
   // {text: '插件窗口',icon: 'extension',link: '/#/popup'  }, //只在插件中显示,不在浏览器显示。
-  {text: '插件选项',icon: 'tune',link: '/#/options'  },
-  {text: '保持专注',icon: 'center_focus_strong',link: '/#/focus'  }
+  // {text: '插件选项',icon: 'tune',link: '/#/options'  },
+  {text: '保持专注',icon: 'center_focus_strong',link: '/#/focus'  },
 ];
 const showData = [
+  {text: '人生意义',icon: 'verified',link: '/#/videos'},  //live_tv
   {text: '下载软件',icon: 'download',link: '/#/download'},
-  {text: '视频教程',icon: 'live_tv',link: '/#/video'},
+  {text: '提问回答',icon: 'help',link: 'https://www.zhihu.com/topic/21239822/hot'},
 ] ;
 const baseData = [
-  {text: '相关产品',icon: 'help',link: '/#/products'},
-  {text: '关于我们',icon: 'feedback',link: '/#/aboutus'},
+  // {text: '相关产品',icon: 'help',link: '/#/products'},
+  {text: '反馈建议',icon: 'feedback',link: '/#/feedback'},
+  {text: '关于我们',icon: 'contact_page',link: '/#/about'},
 ] ;
 
 export default {
