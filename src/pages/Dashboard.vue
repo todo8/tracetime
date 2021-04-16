@@ -488,7 +488,9 @@ export default {
   margin-top: 0px;
   position: relative;
 }
-
+dt.fragment-item-inner{
+  position: relative;
+}
 $indexFragment:1 ;
 .fragment-item-inner-base{
   content: '';
@@ -503,7 +505,6 @@ $indexFragment:1 ;
   left: -10px;
   display: inline-block;
   width: 50px;
-  position: relative;
 }
 ._todo8 .fragment-line:nth-child(1) .fragment-item:nth-child(1) dt.fragment-item-inner:nth-child(4):before {
   @extend .fragment-item-inner-clock;
