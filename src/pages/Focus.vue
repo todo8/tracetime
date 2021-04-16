@@ -1,5 +1,5 @@
 <template>
-  <q-page class="q-pa-sm q-gutter-y-sm" style="max-width:900px;margin-left: auto;margin-right: auto;">      
+  <q-page class="q-pa-sm q-gutter-y-sm page" style="">      
         <q-banner inline-actions rounded class="bg-primary  text-white">
         此功能需要在谷歌浏览器插件上面使用。
 
@@ -32,7 +32,7 @@
             </div>
             <!-- <div>想要一些推荐屏蔽网站吗？ <q-btn color="white" text-color="black" label="推荐列表" /></div> -->
             <div class="q-gutter-y-sm" style="max-width: 400px">
-                <q-input v-model="blackTxt" :placeholder="placeholderBlack" style="min-height:200px;"  filled  type="textarea"/>
+                <q-input v-model="blackTxt" :placeholder="placeholderBlack" style="min-height:100px;" autogrow filled  type="textarea"/>
                 <q-btn  color="white" text-color="black" label="添加阻止的网站" />
             </div>
             <div class="q-pa-sm" style="max-width: 400px;border:solid 1px;border-radius: 6px;">
@@ -64,7 +64,9 @@ export default {
 };
 </script>
 
-<style scoped>
-
+<style >
+.page{
+  max-width:900px;margin-left: auto;margin-right: auto;
+}
 
 </style>
